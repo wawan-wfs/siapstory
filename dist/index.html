@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#090911">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StorySiap — Every Moment Has a Story">
+  <meta property="og:description" content="Immersive cinematic creative studio for photos, videos and memories.">
+  <meta name="description" content="StorySiap Creative Studio — ruang kreatif untuk membingkai, mewarnai, dan menghidupkan cerita foto serta videomu.">
+  <title>StorySiap — Every Moment Has a Story</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="assets/story-coast.webp">
+  <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati navigasi</a>
+  <div class="continuum-stage" id="continuumStage" aria-hidden="true">
+    <div class="continuum-field" id="continuumField"></div>
+    <div class="continuum-orbit continuum-orbit-one"></div>
+    <div class="continuum-orbit continuum-orbit-two"></div>
+    <div class="continuum-core" id="continuumCore"><div class="continuum-core-glint"></div><span>✳</span></div>
+    <div class="continuum-reflection"></div>
+  </div>
+  <div class="continuum-chapter" aria-hidden="true"><span class="continuum-chapter-label">STORYSIAP / FILM</span><span class="continuum-chapter-number" id="continuumChapter">01 <i>/</i> 10</span><span class="continuum-chapter-rule"><i id="continuumChapterProgress"></i></span></div>
+  <div class="cursor-aura" id="cursorAura" aria-hidden="true"><span></span></div>
+  <header class="global-nav" id="globalNav">
+    <a class="wordmark" href="./" aria-label="StorySiap beranda"><span class="brand-star">✳</span>storysiap<span class="brand-period">®</span></a>
+    <nav class="nav-links" aria-label="Navigasi utama">
+      <a href="#pengalaman">Experience</a><a href="#koleksi">Collections</a><a href="#perbandingan">Compare</a><a href="#premium">Studio</a><a href="#pertanyaan">FAQ</a>
+    </nav>
+    <a class="nav-cta" href="studio.html">Masuk Studio <span>↗</span></a>
+    <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Buka menu"><span></span><span></span></button>
+  </header>
+  <nav id="mobileMenu" class="mobile-menu" aria-label="Menu seluler" hidden>
+    <a href="#pengalaman">Experience ↗</a><a href="#koleksi">Collections ↗</a><a href="#perbandingan">Compare ↗</a><a href="#premium">Studio ↗</a><a href="#pertanyaan">FAQ ↗</a><a href="studio.html">Masuk Studio ↗</a>
+  </nav>
+
+  <main id="main" class="continuum-content">
+    <section class="hero" aria-labelledby="heroTitle" id="top">
+      <div class="hero-gridlines" aria-hidden="true"></div>
+      <div class="hero-atmosphere" aria-hidden="true"><span class="light-sweep"></span><span class="light-prism"></span><span class="light-aurora"></span><span class="flare flare-a"></span><span class="flare flare-b"></span></div>
+      <canvas class="hero-particles" id="heroParticles" aria-hidden="true"></canvas>
+      <div class="hero-topline"><span><i></i> YOUR EVERYDAY CREATIVE UNIVERSE</span><span>PHOTO / VIDEO / STORY</span></div>
+      <div class="hero-layout">
+        <div class="hero-copy" data-depth="0.14">
+          <p class="eyebrow"><span class="eyebrow-line"></span> MAKE THE MOMENT YOURS</p>
+          <h1 id="heroTitle"><span class="hero-title-first">Momen kecil.</span><br><em>Cerita besar.</em></h1>
+          <p class="hero-lede">Bukan sekadar mengedit. Ini ruang untuk menghidupkan kembali hal-hal yang ingin kamu ingat.</p>
+          <div class="hero-actions"><a class="pill dark magnetic" href="studio.html">Mulai berkarya <span>↗</span></a><a class="text-action" href="#portal"><span class="play-small">▶</span> Jelajahi pengalaman</a></div>
+          <div class="hero-caption"><span class="caption-mark">✳</span><span>YOUR MOMENTS, YOUR COLORS.<br><b>NO LIMITS TO YOUR STORY.</b></span></div>
+        </div>
+        <div class="hero-art" id="heroScene" aria-label="Visual 3D interaktif StorySiap">
+          <canvas class="scene-canvas" id="heroWebGL" aria-hidden="true"></canvas>
+          <div class="scene-vignette" aria-hidden="true"></div>
+          <div class="scene-orbit orbit-a" aria-hidden="true"></div><div class="scene-orbit orbit-b" aria-hidden="true"></div>
+          <div class="art-label art-label-top"><span class="live-dot"></span> A LITTLE WORLD OF YOUR OWN <b>01 / 04</b></div>
+          <div class="device-stage" id="deviceStage">
+            <div class="story-card story-card-main">
+              <img src="assets/story-coast.webp" alt="Contoh visual cerita pantai dalam bingkai StorySiap" fetchpriority="high" width="941" height="1672">
+              <div class="card-grain"></div><div class="card-top"><span>✳ STORYSIAP / 001</span><span>•••</span></div>
+              <div class="card-copy"><small>A MOMENT TO REMEMBER</small><strong>Somewhere<br>worth staying.</strong><span>THE LITTLE ESCAPE — 2026</span></div>
+              <div class="card-bar"><i></i><span>FRAME YOUR FEELING</span></div>
+            </div>
+            <div class="glass-sheet sheet-front"><span class="sheet-symbol">✳</span><strong>9:16</strong><small>MADE FOR<br>YOUR STORY</small></div>
+            <div class="glass-sheet sheet-back"><span>STORY / 01</span><b>PLAY WITH<br>YOUR MOMENT</b><i>↗</i></div>
+          </div>
+          <div class="floating-note note-one"><span>✦</span><div><b>COLOR YOUR WORLD</b><small>One touch. New feeling.</small></div></div>
+          <div class="floating-note note-two"><span class="note-wave">〰</span><div><b>YOUR CREATIVE SPACE</b><small>Always in your hands.</small></div></div>
+          <div class="art-label art-label-bottom"><span>MOVE YOUR CURSOR</span><span class="drag-indicator">↗</span><span>TO FEEL THE MOTION</span></div>
+          <button id="rotateScene" class="rotate-button" aria-pressed="false" aria-label="Putar komposisi 3D"><span>↻</span></button>
+        </div>
+      </div>
+      <div class="hero-bottom"><a href="#portal"><span class="scroll-circle"><i></i></span><span>SCROLL TO ENTER THE WORLD</span></a><span class="hero-bottom-note">A CREATIVE STUDIO<br>THAT MOVES WITH YOU.</span><span class="section-no">01 — 09</span></div>
+      <div class="hero-side-index" aria-hidden="true">STORYSIAP® <span>SCROLL / FEEL / CREATE</span></div>
+    </section>
+
+
+    <!-- Scroll-scrubbed, pinned cinematic chapter: every frame follows the scroll position. -->
+    <section class="cinema-portal" id="portal" aria-label="Pengalaman sinematik interaktif">
+      <div class="portal-sticky" id="portalSticky">
+        <div class="portal-bg" aria-hidden="true"><div class="portal-grid"></div><div class="portal-glow"></div></div>
+        <div class="portal-kicker"><span>STORYSIAP® / IMMERSIVE EXPERIENCE</span><span id="portalPhase">01 — FEEL</span></div>
+        <div class="portal-visual" aria-hidden="true">
+          <div class="portal-halo halo-outer"></div><div class="portal-halo halo-inner"></div>
+          <div class="portal-photo portal-photo-a"><img src="assets/story-coast.webp" alt="" loading="lazy"><span>FRAME 01 / FEEL</span></div>
+          <div class="portal-photo portal-photo-b"><img src="assets/story-coast.webp" alt="" loading="lazy"><span>FRAME 02 / CREATE</span></div>
+          <div class="portal-sphere"><span class="portal-sphere-glint"></span><i>✳</i></div>
+        </div>
+        <div class="portal-copy">
+          <div class="portal-line portal-line-one"><span class="portal-number">01 / PERASAKAN</span><h2>Cerita bukan<br>sekadar <em>gambar.</em></h2><p>Momen punya energi. Gerakkan halaman ini dan rasakan dunianya berubah.</p></div>
+          <div class="portal-line portal-line-two"><span class="portal-number">02 / HIDUPKAN</span><h2>Setiap gerak<br>punya <em>makna.</em></h2><p>Dari cahaya, kedalaman, sampai komposisi yang terus bertransformasi.</p></div>
+          <div class="portal-line portal-line-three"><span class="portal-number">03 / CIPTAKAN</span><h2>Sekarang, buat<br>versi <em>kamu.</em></h2><p>Ambil kendali atas setiap frame. Kreasikan ceritamu sendiri di Studio.</p><a href="studio.html" class="portal-link">Buka Creative Studio <span>↗</span></a></div>
+        </div>
+        <div class="portal-footer"><span>SCROLL TO DIRECT THE SCENE</span><div class="portal-track"><span id="portalTrack"></span></div><span>INTERACTIVE FILM / 001</span></div>
+      </div>
+    </section>
+
+    <div class="kinetic-strip" aria-hidden="true"><div class="kinetic-track" id="kineticTrack">
+      <span>FEEL SOMETHING</span><i>✳</i><span>MAKE SOMETHING</span><i>✳</i><span>KEEP SOMETHING</span><i>✳</i>
+      <span>FEEL SOMETHING</span><i>✳</i><span>MAKE SOMETHING</span><i>✳</i><span>KEEP SOMETHING</span><i>✳</i>
+    </div></div>
+
+    <section class="manifesto section-pad" id="pengalaman">
+      <div class="section-kicker"><span>01 / A NEW WAY TO TELL YOUR STORY</span><span>✳</span></div>
+      <div class="manifesto-main"><p class="eyebrow">NOT JUST ANOTHER EDITOR</p><h2 class="manifesto-title">Setiap momen<br>punya <span>rasanya.</span></h2><div class="manifesto-side"><span class="vertical-mark">STORYSIAP / EXPERIENCE</span><p>Foto liburan. Video keseharian. Momen di antaranya. Bawa semuanya ke satu ruang kreatif, lalu berikan sentuhan yang terasa benar-benar milikmu.</p><a class="line-link" href="studio.html">Temukan ruang kreatifmu <span>↗</span></a></div></div>
+      <div class="manifesto-orbit" aria-hidden="true"><span class="orbit-ring ring-one"></span><span class="orbit-ring ring-two"></span><b>MAKE<br>IT<br>YOURS.</b></div>
+      <div class="manifesto-footer"><span>LESS TEMPLATE. MORE YOU.</span><span>SCROLL TO DISCOVER ↓</span></div>
+    </section>
+
+    <section class="playground" id="playground" aria-labelledby="playTitle">
+      <div class="playground-backdrop" id="sceneBackdrop"></div><canvas class="scene-canvas playground-canvas" id="playgroundWebGL" aria-hidden="true"></canvas>
+      <div class="playground-top"><span>02 / THE STORY PLAYGROUND</span><span>LIVE LOOK EXPERIMENT</span></div>
+      <div class="playground-content"><p class="eyebrow light"><span class="eyebrow-line"></span> ONE MOMENT. INFINITE MOODS.</p><h2 id="playTitle">Ubah suasana.<br><em>Jangan kehilangan rasa.</em></h2><p id="lookDescription">Warna alami. Momenmu, apa adanya.</p><a class="pill white magnetic" id="tryPreset" href="studio.html?preset=clean">Coba di Studio <span>↗</span></a></div>
+      <div class="playground-controls" role="group" aria-label="Pilih simulasi preset"><button data-look="clean" aria-pressed="true" class="active"><i class="swatch natural"></i><span>Original</span></button><button data-look="cinema" aria-pressed="false"><i class="swatch cinema"></i><span>Cinema</span></button><button data-look="sunset" aria-pressed="false"><i class="swatch golden"></i><span>Golden</span></button><button data-look="editorial" aria-pressed="false"><i class="swatch mono"></i><span>Mono</span></button></div>
+      <div class="playground-index"><span id="lookIndex">01</span><i></i><span>04</span></div>
+      <div class="playground-bottom-note">DRAG / SELECT / FEEL THE DIFFERENCE</div>
+    </section>
+
+    <section class="collection section-pad" id="koleksi">
+      <div class="section-kicker"><span>03 / THE COLLECTION</span><span>BUILT FOR YOUR POINT OF VIEW</span></div>
+      <div class="section-title-row"><div><p class="eyebrow">FIND YOUR FREQUENCY</p><h2>Pilih mood.<br><em>Buat milikmu.</em></h2></div><p>Awal yang bagus untuk ide yang lebih besar. Setiap gaya bisa kamu ubah, atur, dan jadikan milikmu sendiri di Studio.</p></div>
+      <div class="collection-grid">
+        <a class="collection-item" href="studio.html?preset=cinema"><div class="template template-cinema"><img src="assets/story-coast.webp" alt="Contoh preset Cinema dengan warna sinematik" loading="lazy"><span class="template-number">01 / 03</span><div class="template-title"><small>MOMENTS WORTH KEEPING</small><strong>A little<br>escape.</strong></div><span class="template-open">↗</span><span class="template-orbit"></span></div><div class="collection-caption"><strong>The cinematic one.</strong><span>CINEMA / TRAVEL</span></div></a>
+        <a class="collection-item offset" href="studio.html?preset=editorial"><div class="template template-editorial"><img src="assets/story-coast.webp" alt="Contoh preset Editorial minimalis" loading="lazy"><span class="template-number">02 / 03</span><div class="template-title"><small>A STORY BY YOU</small><strong>The<br>everyday.</strong></div><span class="template-open">↗</span><span class="template-orbit"></span></div><div class="collection-caption"><strong>A little less. A lot more.</strong><span>EDITORIAL / MINIMAL</span></div></a>
+        <a class="collection-item" href="studio.html?preset=sunset"><div class="template template-golden"><img src="assets/story-coast.webp" alt="Contoh preset Golden dengan warna hangat" loading="lazy"><span class="template-number">03 / 03</span><div class="template-title"><small>STAY A LITTLE LONGER</small><strong>Golden<br>state.</strong></div><span class="template-open">↗</span><span class="template-orbit"></span></div><div class="collection-caption"><strong>Stay in the golden hour.</strong><span>GOLDEN / LIFESTYLE</span></div></a>
+      </div>
+      <div class="collection-footer"><p>Simulasi komposisi bingkai dan warna. Visual contoh, bukan perbandingan kualitas unggahan.</p><a class="line-link" href="studio.html">Lihat semua kemungkinan <span>↗</span></a></div>
+    </section>
+
+    <section class="comparison section-pad" id="perbandingan" aria-labelledby="comparisonTitle">
+      <div class="section-kicker"><span>04 / THE CREATIVE DIFFERENCE</span><span>DRAG TO DISCOVER ✳</span></div>
+      <div class="comparison-heading"><div><p class="eyebrow light">A CREATIVE TOOL YOU CAN FEEL</p><h2 id="comparisonTitle">One frame.<br><em>Two feelings.</em></h2></div><p>Geser pembanding untuk menjelajahi dua interpretasi dari foto yang sama. Ini demonstrasi warna, bukan peningkatan resolusi otomatis.</p></div>
+      <div class="compare-workspace" id="compareWorkspace" style="--split:50%">
+        <div class="compare-picture compare-before"><img src="assets/story-coast.webp" alt="Foto pantai dengan warna asli" loading="lazy"><span class="compare-chip">ORIGINAL</span></div>
+        <div class="compare-picture compare-after"><img src="assets/story-coast.webp" alt="Foto pantai dengan tampilan warna sinematik" loading="lazy"><span class="compare-chip">CINEMATIC</span></div>
+        <div class="compare-guide" aria-hidden="true"><span>‹</span><b>↔</b><span>›</span></div>
+        <input type="range" id="compareRange" min="0" max="100" value="50" aria-label="Bandingkan foto asli dan efek sinematik; geser untuk melihat perbedaannya" aria-valuetext="50 persen efek sinematik">
+      </div>
+      <div class="comparison-bottom"><span><i class="live-dot"></i> LIVE COLOR COMPARISON <b id="comparePercent">50 / 50</b></span><a class="line-link" href="studio.html?preset=cinema">Buka di Creative Studio <span>↗</span></a></div>
+    </section>
+
+    <section class="premium section-pad" id="premium">
+      <div class="premium-glow" aria-hidden="true"></div><div class="section-kicker"><span>05 / CREATIVE SUITE</span><span class="pro-label">MORE ROOM TO CREATE ✳</span></div>
+      <div class="premium-intro"><div><p class="eyebrow light">TOOLS THAT GET OUT OF YOUR WAY</p><h2>Kendali kecil.<br><em>Bedanya besar.</em></h2></div><p>Peralatan kreatif untuk menyelesaikan cerita dari awal sampai siap dibagikan. Semua yang kamu butuhkan, tanpa membuat proses terasa rumit.</p></div>
+      <div class="feature-layout"><div class="feature-aside"><div class="feature-orb"><span>✳</span><i></i></div><p>YOUR IDEAS<br>DESERVE A FRAME.</p><span class="feature-aside-index">STORYSIAP / TOOLS 001—011</span></div>
+        <div class="feature-list">
+          <article class="feature-row"><span>01</span><div><h3>Preset & color grading</h3><p>Enam preset kreatif, enam look warna, serta kendali kecerahan, kontras, dan saturasi.</p></div><b>◐</b></article>
+          <article class="feature-row"><span>02</span><div><h3>Teks & identitasmu</h3><p>Tambahkan judul, subjudul, watermark, dan simpan identitasmu sebagai brand kit.</p></div><b>Aa</b></article>
+          <article class="feature-row"><span>03</span><div><h3>Preset buatanmu</h3><p>Simpan hingga delapan gaya sendiri di browser. Gunakan lagi kapan pun kamu butuh.</p></div><b>✳</b></article>
+          <article class="feature-row"><span>04</span><div><h3>Ekspor yang fleksibel</h3><p>JPG, PNG, WebP untuk foto; MP4 untuk video pada browser yang mendukung. Hingga 1080p.</p></div><b>↗</b></article>
+          <article class="feature-row"><span>05</span><div><h3>Ruang untuk mencoba</h3><p>Undo, redo, pembanding tanpa efek, area aman, serta latar blur, solid, atau gradasi.</p></div><b>↶</b></article>
+          <article class="feature-row"><span>06</span><div><h3>Typography, your way</h3><p>Pilih Sans, Serif, atau Mono; atur perataan, posisi, ukuran, dan warna teks.</p></div><b>Aa</b></article>
+          <article class="feature-row"><span>07</span><div><h3>Signature frame</h3><p>Tambahkan garis bingkai dan warna aksen brand agar setiap Story punya identitas.</p></div><b>▢</b></article>
+          <article class="feature-row"><span>08</span><div><h3>Brand kit yang personal</h3><p>Simpan warna, tipografi, warna teks, dan posisi watermark untuk proyek berikutnya.</p></div><b>✳</b></article>
+          <article class="feature-row"><span>09</span><div><h3>Warmth control</h3><p>Tambahkan nuansa hangat pada foto dan video dengan pengaturan temperatur warna.</p></div><b>☼</b></article>
+          <article class="feature-row"><span>10</span><div><h3>Fine film grain</h3><p>Tekstur grain halus yang ikut tampil pada pratinjau dan file hasil.</p></div><b>∴</b></article>
+          <article class="feature-row"><span>11</span><div><h3>Cinematic vignette</h3><p>Atur vignette untuk mengarahkan fokus ke bagian tengah cerita.</p></div><b>◉</b></article>
+        </div>
+      </div>
+      <div class="premium-bottom"><span><i></i> MEDIA DIPROSES DI PERANGKATMU</span><a class="pill white magnetic" href="studio.html">Jelajahi semua alat <span>↗</span></a></div>
+    </section>
+
+    <section class="how section-pad" id="cara-kerja">
+      <div class="section-kicker"><span>06 / FROM MOMENT TO MASTERPIECE</span><span>KEEP IT SIMPLE</span></div><div class="how-heading"><p class="eyebrow">THREE STEPS. YOUR OWN STORY.</p><h2>Tiga langkah.<br><em>Sisanya, kamu.</em></h2></div>
+      <div class="steps"><article><span class="step-number">(01)</span><div class="step-symbol">↗</div><h3>Bawa momenmu.</h3><p>Pilih foto atau video dari galeri. Atau gunakan contoh untuk mencoba Studio.</p><span class="step-line"></span></article><article><span class="step-number">(02)</span><div class="step-symbol">✳</div><h3>Ikuti rasamu.</h3><p>Pilih preset, sesuaikan bingkai, tambahkan teks, dan buat warnanya terasa pas.</p><span class="step-line"></span></article><article><span class="step-number">(03)</span><div class="step-symbol">◎</div><h3>Bagikan ceritanya.</h3><p>Periksa hasil ekspor, simpan ke galeri, lalu unggah ke platform pilihanmu.</p><span class="step-line"></span></article></div>
+    </section>
+
+    <section class="faq section-pad" id="pertanyaan">
+      <div class="faq-heading"><div class="section-kicker">07 / GOOD TO KNOW.</div><p class="eyebrow">A FEW THINGS YOU MAY WONDER</p><h2>Detail kecil.<br><em>Jawaban jelas.</em></h2><div class="faq-stamp">ASK<br>AWAY <span>↘</span></div></div>
+      <div class="faq-list">
+        <details><summary>Apakah fitur kreatifnya berbayar?<span>+</span></summary><p>Semua fitur Creative Suite pada versi ini langsung bisa dipakai. Belum ada langganan atau pembayaran.</p></details>
+        <details><summary>Foto dan video saya dikirim ke mana?<span>+</span></summary><p>Pemrosesan media berlangsung di browser perangkatmu. Brand kit dan preset pribadi disimpan secara lokal pada browser yang sama, tanpa akun dan tanpa sinkronisasi cloud.</p></details>
+        <details><summary>Bagaimana cara mengaktifkan auto-scroll?<span>+</span></summary><p>Klik ikon play di kanan bawah tepat di atas tombol kembali ke atas. Pilih kecepatan dan mode Alir (kontinu) atau Bab (berjeda tiap bagian). Klik ikon lagi untuk jeda. Scroll manual, ketuk, tekan Escape, atau pindah tab juga menjeda.</p></details>
+        <details><summary>Apakah animasi mengikuti pengaturan perangkat?<span>+</span></summary><p>Ya. Animasi mengikuti preferensi Reduce Motion pada perangkat. Auto-scroll tetap opsional dan hanya berjalan setelah diaktifkan melalui ikon kontrol.</p></details>
+        <details><summary>Apakah hasil pasti bebas pecah?<span>+</span></summary><p>Kualitas sumber dan kompresi WhatsApp atau Instagram tetap menentukan hasil. Studio membantu menyiapkan komposisi dan format; tidak memulihkan detail dengan AI.</p></details>
+        <details><summary>Apakah ekspor video didukung semua browser?<span>+</span></summary><p>Ekspor membutuhkan dukungan MP4 H.264, dan AAC untuk suara. Studio memeriksa dukungan perangkat. Durasi maksimal 60 detik per ekspor. File asli tetap bisa disimpan jika ekspor belum didukung.</p></details>
+      </div>
+    </section>
+
+    <section class="final-cta section-pad" id="mulai"><div class="final-cta-glow" aria-hidden="true"></div><div class="section-kicker"><span>08 / YOUR NEXT STORY STARTS HERE</span><span>✳</span></div><p class="eyebrow light">READY WHEN YOU ARE</p><a class="giant-cta" href="studio.html">Bikin cerita.<br><em>Versi kamu.</em><b>↗</b></a><div class="final-meta"><p>Sedikit sentuhan. Sesuatu yang berarti.</p><span>LET'S MAKE SOMETHING GOOD.</span></div></section>
+  </main>
+
+  <footer class="site-footer"><a class="wordmark" href="./"><span class="brand-star">✳</span>storysiap<span class="brand-period">®</span></a><p>Every moment has a story.</p><div><a href="studio.html">Studio ↗</a><a href="#pertanyaan">FAQ ↗</a><span>© 2026 StorySiap</span></div></footer>
+
+  <nav class="chapter-rail" id="chapterRail" aria-label="Navigasi bab pengalaman">
+    <span class="chapter-rail-title">THE JOURNEY</span>
+    <a href="#top" aria-label="Ke bagian awal" data-chapter="top"><i></i><span>INTRO</span></a>
+    <a href="#portal" aria-label="Ke bab sinematik" data-chapter="portal"><i></i><span>MOTION</span></a>
+    <a href="#pengalaman" aria-label="Ke bagian pengalaman" data-chapter="pengalaman"><i></i><span>STORY</span></a>
+    <a href="#playground" aria-label="Ke bagian playground" data-chapter="playground"><i></i><span>PLAY</span></a>
+    <a href="#koleksi" aria-label="Ke bagian koleksi" data-chapter="koleksi"><i></i><span>LOOKS</span></a>
+    <a href="#perbandingan" aria-label="Ke bagian perbandingan" data-chapter="perbandingan"><i></i><span>COMPARE</span></a>
+    <a href="#premium" aria-label="Ke bagian fitur premium" data-chapter="premium"><i></i><span>TOOLS</span></a>
+    <a href="#cara-kerja" aria-label="Ke bagian cara kerja" data-chapter="cara-kerja"><i></i><span>CREATE</span></a>
+    <a href="#pertanyaan" aria-label="Ke bagian FAQ" data-chapter="pertanyaan"><i></i><span>FAQ</span></a>
+    <a href="#mulai" aria-label="Ke bagian mulai" data-chapter="mulai"><i></i><span>FINALE</span></a>
+    <span class="chapter-rail-counter" id="chapterCounter">01 / 10</span>
+  </nav>
+  <div class="ambient-grain" aria-hidden="true"></div>
+  <div class="motion-setting"><button type="button" id="motionToggle" aria-pressed="true" aria-label="Kurangi animasi dekoratif" title="Kurangi animasi dekoratif"><span class="motion-icon">✳</span><span id="motionLabel">MOTION ON</span></button></div>
+  <div class="scroll-tools" aria-label="Kontrol halaman"><div class="auto-row"><label class="speed-control" for="scrollSpeed"><span>Kecepatan</span><select id="scrollSpeed" aria-label="Kecepatan auto-scroll"><option value="28">Santai</option><option value="55" selected>Normal</option><option value="90">Cepat</option></select></label><label class="tour-control" for="scrollMode"><span>Mode</span><select id="scrollMode" aria-label="Mode auto-scroll"><option value="flow">Alir</option><option value="chapter">Bab</option></select></label><button id="autoScrollToggle" class="scroll-tool auto-scroll-button" aria-label="Aktifkan auto-scroll" aria-pressed="false" title="Aktifkan auto-scroll" aria-describedby="scrollStatus"><svg viewBox="0 0 48 48" aria-hidden="true"><circle class="scroll-progress-ring" cx="24" cy="24" r="21"/><path class="play-icon" d="m19 14 14 10-14 10Z"/><path class="pause-icon" d="M18 14v20M30 14v20"/></svg><span class="scroll-tool-tooltip" aria-hidden="true">Auto-scroll</span></button></div><button id="backToTop" class="scroll-tool back-to-top-button" aria-label="Kembali ke atas" title="Kembali ke atas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5m-6 6 6-6 6 6"/></svg><span class="scroll-tool-tooltip" aria-hidden="true">Ke atas</span></button></div>
+  <div id="scrollStatus" class="scroll-status" role="status" aria-live="polite"></div><div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div>
+  <script type="module" src="landing.mjs"></script>
+  <script type="module" src="cinematic-v6.mjs"></script>
+</body>
+</html>
